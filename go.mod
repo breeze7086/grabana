@@ -1,4 +1,4 @@
-module github.com/K-Phoen/grabana
+module github.com/breeze7086/grabana
 
 go 1.13
 

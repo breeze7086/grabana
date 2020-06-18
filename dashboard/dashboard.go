@@ -3,11 +3,11 @@ package dashboard
 import (
 	"encoding/json"
 
-	"github.com/K-Phoen/grabana/row"
-	"github.com/K-Phoen/grabana/variable/constant"
-	"github.com/K-Phoen/grabana/variable/custom"
-	"github.com/K-Phoen/grabana/variable/interval"
-	"github.com/K-Phoen/grabana/variable/query"
+	"github.com/breeze7086/grabana/row"
+	"github.com/breeze7086/grabana/variable/constant"
+	"github.com/breeze7086/grabana/variable/custom"
+	"github.com/breeze7086/grabana/variable/interval"
+	"github.com/breeze7086/grabana/variable/query"
 	"github.com/grafana-tools/sdk"
 )
 

@@ -3,8 +3,8 @@ package graph
 import (
 	"testing"
 
-	"github.com/K-Phoen/grabana/axis"
-	"github.com/K-Phoen/grabana/target/stackdriver"
+	"github.com/breeze7086/grabana/axis"
+	"github.com/breeze7086/grabana/target/stackdriver"
 	"github.com/stretchr/testify/require"
 )
 

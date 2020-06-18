@@ -3,12 +3,12 @@ package decoder
 import (
 	"fmt"
 
-	"github.com/K-Phoen/grabana/variable/interval"
+	"github.com/breeze7086/grabana/variable/interval"
 
-	"github.com/K-Phoen/grabana/dashboard"
-	"github.com/K-Phoen/grabana/variable/constant"
-	"github.com/K-Phoen/grabana/variable/custom"
-	"github.com/K-Phoen/grabana/variable/query"
+	"github.com/breeze7086/grabana/dashboard"
+	"github.com/breeze7086/grabana/variable/constant"
+	"github.com/breeze7086/grabana/variable/custom"
+	"github.com/breeze7086/grabana/variable/query"
 )
 
 var ErrVariableNotConfigured = fmt.Errorf("variable not configured")

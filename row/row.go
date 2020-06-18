@@ -1,10 +1,10 @@
 package row
 
 import (
-	"github.com/K-Phoen/grabana/graph"
-	"github.com/K-Phoen/grabana/singlestat"
-	"github.com/K-Phoen/grabana/table"
-	"github.com/K-Phoen/grabana/text"
+	"github.com/breeze7086/grabana/graph"
+	"github.com/breeze7086/grabana/singlestat"
+	"github.com/breeze7086/grabana/table"
+	"github.com/breeze7086/grabana/text"
 	"github.com/grafana-tools/sdk"
 )
 
