@@ -3,7 +3,7 @@ package singlestat
 import (
 	"strings"
 
-	"github.com/K-Phoen/grabana/target/prometheus"
+	"github.com/breeze7086/grabana/target/prometheus"
 	"github.com/grafana-tools/sdk"
 )
 

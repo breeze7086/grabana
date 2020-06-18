@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/K-Phoen/grabana"
-	"github.com/K-Phoen/grabana/decoder"
+	"github.com/breeze7086/grabana"
+	"github.com/breeze7086/grabana/decoder"
 )
 
 func main() {

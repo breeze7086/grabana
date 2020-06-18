@@ -3,10 +3,10 @@ package decoder
 import (
 	"fmt"
 
-	"github.com/K-Phoen/grabana/alert"
-	"github.com/K-Phoen/grabana/axis"
-	"github.com/K-Phoen/grabana/graph"
-	"github.com/K-Phoen/grabana/row"
+	"github.com/breeze7086/grabana/alert"
+	"github.com/breeze7086/grabana/axis"
+	"github.com/breeze7086/grabana/graph"
+	"github.com/breeze7086/grabana/row"
 )
 
 var ErrNoAlertThresholdDefined = fmt.Errorf("no threshold defined")

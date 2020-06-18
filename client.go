@@ -11,8 +11,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/K-Phoen/grabana/alert"
-	"github.com/K-Phoen/grabana/dashboard"
+	"github.com/breeze7086/grabana/alert"
+	"github.com/breeze7086/grabana/dashboard"
 	"github.com/grafana-tools/sdk"
 )
 

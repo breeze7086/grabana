@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	builder "github.com/K-Phoen/grabana/dashboard"
+	builder "github.com/breeze7086/grabana/dashboard"
 	"github.com/stretchr/testify/require"
 )
 

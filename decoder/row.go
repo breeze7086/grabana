@@ -1,8 +1,8 @@
 package decoder
 
 import (
-	"github.com/K-Phoen/grabana/dashboard"
-	"github.com/K-Phoen/grabana/row"
+	"github.com/breeze7086/grabana/dashboard"
+	"github.com/breeze7086/grabana/row"
 )
 
 type DashboardRow struct {

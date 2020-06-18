@@ -1,10 +1,11 @@
 package graph
 
 import (
-	"github.com/K-Phoen/grabana/alert"
-	"github.com/K-Phoen/grabana/axis"
-	"github.com/K-Phoen/grabana/target/prometheus"
-	"github.com/K-Phoen/grabana/target/stackdriver"
+	"github.com/breeze7086/grabana/alert"
+	"github.com/breeze7086/grabana/axis"
+	"github.com/breeze7086/grabana/target/cloudwatch"
+	"github.com/breeze7086/grabana/target/prometheus"
+	"github.com/breeze7086/grabana/target/stackdriver"
 	"github.com/grafana-tools/sdk"
 )
 
@@ -125,6 +126,26 @@ func WithPrometheusTarget(query string, options ...prometheus.Option) Option {
 			LegendFormat:   target.LegendFormat,
 			Instant:        target.Instant,
 			Format:         target.Format,
+		})
+	}
+}
+
+// WithCloudwatchTarget adds a cloudwatch query to the graph.
+func WithCloudwatchTarget(namespace string, metricName string, statistics []string, dimensions map[string]string, region string, period string, options ...cloudwatch.Option) Option {
+	target := cloudwatch.New(namespace, metricName, statistics, dimensions, region, period, options...)
+
+	return func(graph *Graph) {
+		graph.Builder.AddTarget(&sdk.Target{
+			RefID:      target.Ref,
+			Hide:       target.Hidden,
+			Expr:       target.Expression,
+			Alias:      target.Alias,
+			Namespace:  target.Namespace,
+			MetricName: target.MetricName,
+			Statistics: target.Statistics,
+			Dimensions: target.Dimensions,
+			Period:     target.Period,
+			Region:     target.Region,
 		})
 	}
 }

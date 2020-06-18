@@ -3,8 +3,8 @@ package decoder
 import (
 	"fmt"
 
-	"github.com/K-Phoen/grabana/dashboard"
-	"github.com/K-Phoen/grabana/row"
+	"github.com/breeze7086/grabana/dashboard"
+	"github.com/breeze7086/grabana/row"
 )
 
 var ErrPanelNotConfigured = fmt.Errorf("panel not configured")

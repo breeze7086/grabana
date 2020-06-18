@@ -3,7 +3,7 @@ package decoder
 import (
 	"testing"
 
-	"github.com/K-Phoen/grabana/target/stackdriver"
+	"github.com/breeze7086/grabana/target/stackdriver"
 
 	"github.com/stretchr/testify/require"
 )

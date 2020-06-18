@@ -3,8 +3,8 @@ package decoder
 import (
 	"fmt"
 
-	"github.com/K-Phoen/grabana/target/prometheus"
-	"github.com/K-Phoen/grabana/target/stackdriver"
+	"github.com/breeze7086/grabana/target/prometheus"
+	"github.com/breeze7086/grabana/target/stackdriver"
 )
 
 var ErrTargetNotConfigured = fmt.Errorf("target not configured")
