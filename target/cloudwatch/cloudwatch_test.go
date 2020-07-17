@@ -9,12 +9,10 @@ import (
 func TestNewCloudwatchTargetCanBeCreated(t *testing.T) {
 	req := require.New(t)
 
-	namespace := "LBProvisionedLCU"
-	metricName := "ProvisionedLCU"
+	namespace := "AWS/Logs"
+	metricName := "IncomingBytes"
 	statistics := []string{"Average"}
-	dimensions := map[string]string{
-		"Loadbalancer Name": "9f2e1c28-default-prometheu-0928",
-	}
+	dimensions := map[string]string{}
 	region := "us-east-1"
 	period := ""
 
@@ -26,4 +24,23 @@ func TestNewCloudwatchTargetCanBeCreated(t *testing.T) {
 	req.Equal(dimensions, target.Dimensions)
 	req.Equal(region, target.Region)
 	req.Equal(period, target.Period)
+}
+
+func TestRefCanBeConfigured(t *testing.T) {
+	req := require.New(t)
+
+	target := cloudwatch.New("", "", []string{}, map[string]string{}, "", "",
+		cloudwatch.Ref("A"))
+
+	req.Equal("A", target.Ref)
+	req.False(target.Hidden)
+}
+
+func TestTargetCanBeHidden(t *testing.T) {
+	req := require.New(t)
+
+	target := cloudwatch.New("", "", []string{}, map[string]string{}, "", "",
+		cloudwatch.Hide())
+
+	req.True(target.Hidden)
 }
